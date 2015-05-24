@@ -1,10 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Contact</title>
-</head>
-<body>
-<h1>Contact Me!</h1>
-</body>
-</html>
+@extends('apple')
+
+@section('content')
+
+<h1>Contact Me: </h1>
+<p>Find {{ $first }} {{ $last }} at this page and get in touch.</p>
+
+@stop
+
+@section('footer')
+<i>Content by: {{ $first }}</i>
+@stop

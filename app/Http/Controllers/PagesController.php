@@ -29,19 +29,37 @@ class PagesController extends Controller {
 		
 		// METHOD 2)
 		// $data = [];
-		// $data['first'] = 'Douglas';
-		// $data['last'] = 'Quaid';
+		// $data['first'] = 'Patrick';
+		// $data['last'] = 'Thomas';
 		
 		// return view('pages.about', $data);
 		
 		// METHOD 3)
-		// $first = 'Fox';
-		// $last = 'Mulder';
+		//$first = 'Patrick';
+		////$first = 'John';
+		//$last = 'Thomas';
 		
-		// return view('pages.about', compact('first', 'last'));
+		//return view('pages.about', compact('first', 'last'));
 		
+		//return view('pages.about');
 		
+		// PASSING A [PEOPLE] VIEW
+		// $people = [
+			// 'George Orwell', 'Bobby Dylan', 'Gail Stream', 'Brice Price'
+		// ];
+		
+		$people = [];
+		
+		return view('pages.about', compact('people'));
 	}
 	
-
+	public function contact()
+	{
+		$first = 'Patrick';
+		$last = 'Thomas';
+		
+		return view('pages.contact', compact('first', 'last'));
+	}
+	
+	
 }
